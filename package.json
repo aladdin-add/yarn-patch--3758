@@ -12,5 +12,8 @@
   "dependencies": {
     "yamlparser": "^0.0.2"
   },
-  "packageManager": "yarn@3.1.0"
+  "packageManager": "yarn@3.1.0",
+  "resolutions": {
+    "yamlparser@0.0.2": "patch:yamlparser@npm:0.0.2#.yarn/patches/yamlparser-npm-0.0.2-2d1d3bf677"
+  }
 }

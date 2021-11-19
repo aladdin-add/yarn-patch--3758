@@ -1,0 +1,22 @@
+diff --git a/yamlparser.js b/yamlparser.js
+index dd2cf17a9f33d870b203bc7228720479ab992b80..4d4d6c04fe91ed9f8c80d05c4357faf1cb5456c2 100644
+--- a/yamlparser.js
++++ b/yamlparser.js
+@@ -427,7 +427,7 @@ var YAML =
+         return lines.join("\n");
+     }
+     
+-    function eval(str) {
++    function evaluate(str) {
+         errors = [];
+         reference_blocks = [];
+         processing_time = (new Date()).getTime();
+@@ -445,7 +445,7 @@ var YAML =
+          * @param {String} str String with the YAML file contents.
+          * @function
+          */
+-        eval : eval,
++        eval : evaluate,
+         
+         /**
+          * Get errors found when parsing the last file.
